@@ -206,7 +206,7 @@ a:visited {
 @media (min-width: 50em) {
 
 	.page-header img{
-		min-height:25rem;
+		min-height:35rem;
 	}
 
 	.menu-toggle{
