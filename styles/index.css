@@ -352,10 +352,10 @@ a:visited {
 /* Footer */
 .site-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .site-footer a.back-to-top {
