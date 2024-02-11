@@ -17,8 +17,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+	<meta name="description" content="Learn more about the country of Canada and what holidays they observe.">
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/country-main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Young+Serif&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
 	
 </head>
@@ -44,11 +48,12 @@
 				<ul class="nav-menu" id="header-menu">
                     
 					<li><a href="/index.html">Landing Page</a></li>
-					<li><a href="/country-about.html">About</a></li>
+					<li><a href="#aboutme">About Canada</a></li>
+					<li><a href="#holiday">Holidays</a></li>
 					<li><a href="/country-food.html">Cuisine</a></li>
 					<li><a href="/country-attractions.html">Things To Do</a></li>
                     <li><a href="/country-credits.html">Credits</a></li>
-					<li><a href="mailto:dilrajran@gmail.com">Contact Me</a></li>
+					<li><a href="#contact">Contact Us Form</a></li>
 				</ul>
 
 			</nav> 
@@ -67,14 +72,16 @@
 			<h2>About Canada</h2>
 			<p>Canada is home to around 40 million individuals who live in 10 provinces and 3 territories in Canada. This country is located in North America between the atlantic and pacific oceans. The official languages of Canada are english and french, but has many individuals in the country that speak different languages such as spanish, punjabi, korean, japanese, chinese, etc. Canada first declaired their independance on July 1st, 1867. </p>
 		</section>
-		<section class="section-holiday">
+		<section class="section-holiday" id="holiday">
 			<h2 class="holiday-heading">National Holidays for 2024</h2>
 			<div class="holiday-wrapper">
-				<img src="" alt="" srcset="">
+				<!-- <img src="" alt="" srcset=""> -->
 				<table class="holiday-table">
 					<thread>
-						<tr>Holiday</tr>
-						<tr>Date</tr>
+						<tr>
+							<td>Holiday</td>
+							<td>Date</td>
+						</tr>
 					</thread>
 					<tbody>
 						<tr>
@@ -133,6 +140,38 @@
 				</table>
 			</div>
 		</section>
+		<section>
+			<div class="food-wrapper">
+				<article class="blockquote" id="blockquote">
+					<blockquote cite="https://www.royal.uk/queens-speech-nova-scotia-28-june-2010">
+						<p>My mother once said that this country felt like a home away from home for The Queen of Canada. Prime Minister, I am pleased to report that it still does.</p>
+						<footer>—Garrison Grounds, Halifax, 28th June 2010</footer>
+					</blockquote>
+				</article>
+			</div>
+		</section>
+		<section id="contact">
+			<h2 class="form-heading">Contact Us</h2>
+			<form action="/my-handling-form-page" method="post" class="attraction-wrapper">
+				<ul>
+				  <li>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="user_name" />
+				  </li>
+				  <li>
+					<label for="mail">Email:</label>
+					<input type="email" id="mail" name="user_email" />
+				  </li>
+				  <li>
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="user_message"></textarea>
+				  </li>
+				</ul>
+			  </form>
+		</section>
 	</main>
+	<footer class="site-footer">
+		<a class="back-to-top" href="#top">Back to Top</a>
+	</footer>
 </body>
 </html>
