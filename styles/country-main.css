@@ -59,7 +59,8 @@ header img{
 	background-color: whitesmoke;
 	line-height: 3rem;
 	text-align: center;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 .nav-menu a {
@@ -91,7 +92,7 @@ header img{
 
 /* Typeography*/
 body{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -100,7 +101,7 @@ body{
 }
 h1,
 h2 {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: 'Montserrat', sans-serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
 	text-align: center;
@@ -110,7 +111,7 @@ a,
 a:visited { 
 	text-decoration: none;
 	font-size: 1rem;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	
 }
@@ -149,6 +150,7 @@ a:visited {
 }
 
 
+
 /* END -- STYLES FOR MOBILE MENU */
 
 /* Main
@@ -180,12 +182,28 @@ video {
 	text-transform: uppercase;
 	text-align: center;
 }
+.food-header h1 {
+    color: black;
+    position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+	margin: 0;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+}
 
-.page-header img {
+.page-header img,
+.food-header img{
 	display: block;
 	object-fit: cover;
+    height: 70rem;
 	
 }
+
 .main-header{
     color:black;
     text-shadow:8px -4px 5px #ffff;
@@ -213,19 +231,21 @@ video {
 		align-items: center;
 	}
 
-	.section-attraction {
+	.section-attraction,
+    .section-food {
         flex-direction: row;
 		
     }
-	.attraction-heading {
+	.attraction-heading,
+    .food-heading {
 		white-space: nowrap; /* Avoid text wrapping */
-		position: fixed;
+		position: relative;
 		left: 0;
 		top: 50%;
 		transform-origin: bottom left;
 		padding: 0.5rem;
 		z-index: 1;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 	}
 
 }
@@ -246,34 +266,53 @@ video {
 	padding-left: 1rem;
 	
 }
+td, th {
+    padding: 0.5rem;
+}
+
+td {
+    color: black;
+    background-color: lightcyan;
+    font-weight: bold;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+/*Attractions and food*/
 
 
-/*Attractions*/
-
-
-.attraction {
+.attraction,
+.food {
     box-shadow: 0 0 3px 2px lightslategray;
     background-color: lightcyan;
     margin: 1rem;
 }
-.attraction img{
+.attraction img,
+.food img{
     height: 40rem;
     width: 100%;
     object-fit: cover;
     border-radius: 4px;
 }
-.attraction-text {
+.attraction-text,
+.food-text {
     margin: 0 1rem;
     padding: 0.5rem;
     text-align: center;
 
 }
 
-.section-attraction {
+.section-attraction,
+.section-food {
     text-align: center;
 }
 
-.attraction-wrapper {
+.attraction-wrapper,
+.food-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,12 +326,23 @@ video {
     gap: 1rem;
 }
 
-.attraction-wrapper {
+.attraction-wrapper,
+.food-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.blockquote{
+    box-shadow: 2px 2px 5px #000;
+    margin: 4rem 0;
+    background-color: #feff9c;
+}
+.attraction-wrapper{
+    box-shadow: 2px 2px 5px #000;
+    margin: 10rem 0;
+    background-color: lightcyan;
+}
 @media (min-width: 43.75em) {
 
 	.menu-toggle {
@@ -320,22 +370,26 @@ video {
 		line-height: 4.5rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
 		padding: 0 1rem;
 	}
-	.section-attraction {
+	.section-attraction,
+    .section-food {
         flex-direction: row;
         justify-content: center; 
     }
 
-    .attraction-wrapper {
+    .attraction-wrapper,
+    .section-food {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-	.section-attraction {
+	.section-attraction,
+    .section-food {
         flex-direction: row;
         justify-content: center;
     }
 
-    .attraction-wrapper {
+    .attraction-wrapper,
+    .section-food {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
