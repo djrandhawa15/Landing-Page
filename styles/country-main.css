@@ -341,16 +341,16 @@ th {
     margin: 4rem 0;
     background-color: #feff9c;
 }
-.attraction-wrapper{
-    display: grid;
-	grid-template-columns:repeat(5, 25rem);
-	background-color: lightgray;
-	justify-content: center;
-	gap: 1rem;
-	padding: 5rem 0;
-}
-@media (min-width: 43.75em) {
 
+@media (min-width: 43.75em) {
+    .attraction-wrapper{
+        display: grid;
+        grid-template-columns:repeat(5, 30rem);
+        background-color: lightgray;
+        justify-content: center;
+        gap: 1rem;
+        padding: 5rem 0;
+    }
 	.menu-toggle {
 		display: none;
 	}
