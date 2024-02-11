@@ -268,7 +268,9 @@ a:visited {
     background-color: lightcyan;
     margin: 1rem;
 }
-
+.projects img{
+	size-adjust: 5rem;
+}
 .project-text {
     margin: 0 1rem;
     padding: 0.5rem;
